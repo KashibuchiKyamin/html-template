@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI部品基本設計</title>
+</head>
+
+<body>
+    <h1>UI部品基本設計</h1>
+    <hr>
+    <h2>部品名リンク一覧</h2>
+    <ul>
+        <li><a href="#">チェックボックス</a></li>
+        <li><a href="#">ラジオボタン</a></li>
+        <li><a href="#">文字入力(1行)</a></li>
+        <li><a href="#">文字入力(複数行)</a></li>
+        <li><a href="#">日付入力</a></li>
+        <li><a href="#">時刻入力</a></li>
+        <li><a href="#">送信または遷移ボタン</a></li>
+        <li><a href="#">送信のない入力ボタン</a></li>
+        <li><a href="#">キャンセルボタン</a></li>
+        <li><a href="#">戻るボタン</a></li>
+        <li><a href="#">非活性ボタン</a></li>
+        <li><a href="#">テーブル</a></li>
+    </ul>
+    <hr>
+    <h2>入力欄</h2>
+    <h3>チェックボックス</h3>
+    <input type="checkbox" id="checkboxsample" name="checkboxsample" checked />
+    <label for="checkboxsample">チェックボックス</label>
+
+    <h3>ラジオボタン</h3>
+    <label class="radio-block"><input type="radio" name="5" />選択肢1</label>
+    <label class="radio-block"><input type="radio" name="5" />選択肢2</label>
+    <label class="radio-block"><input type="radio" name="5" />選択肢3</label>
+
+    <h3>テキストボックス(1行)</h3>
+    <input type="text" id="textsample" name="textsample" placeholder="テキスト" />
+
+    <h3>テキストボックス(複数行)</h3>
+    <textarea id="textareasample" name="textareasample" placeholder="テキスト"></textarea>
+
+    <h3>日付入力</h3>
+    <input type="date" />
+
+    <h3>時刻入力</h3>
+    <input type="time" />
+
+    <h3>セレクトボックス</h3>
+    <select name="" id="">
+        <option value="">選択肢1</option>
+        <option value="">選択肢2</option>
+        <option value="">選択肢3</option>
+    </select>
+    <hr>
+
+    <h2>ボタン</h2>
+    <h3>送信または遷移</h3>
+    <button class="send">action</button>
+    <h3>送信のない入力</h3>
+    <button class="not-send">action</button>
+    <h3>キャンセル</h3>
+    <button class="cancel">action</button>
+    <h3>戻る</h3>
+    <button class="back">action</button>
+    <h3>非活性</h3>
+    <button class="send" disabled>action</button>
+
+</body>
+
+</html>
