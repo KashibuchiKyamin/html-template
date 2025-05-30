@@ -1,4 +1,4 @@
-
+import { gridjsConfig } from "./japanese-gridjs.js";
 new gridjs.Grid({
     columns: [
         "名前",
@@ -9,6 +9,7 @@ new gridjs.Grid({
         }
     ],
     sort: true,
+    language: gridjsConfig,
     server: {
         url: tableData,
         method: "GET",
