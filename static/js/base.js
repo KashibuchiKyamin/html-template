@@ -9,6 +9,7 @@ const tableOfServerSide = new gridjs.Grid({
         }
     ],
     sort: true,
+    style: gridjsStyleConfig,
     language: gridjsLanguageConfig,
     server: {
         url: tableData,
@@ -24,7 +25,6 @@ const tableOfServerSide = new gridjs.Grid({
         },
         total: (data) => data.total
     },
-    style: gridjsStyleConfig,
     sort: {
         multiColumn: false,
         server: {

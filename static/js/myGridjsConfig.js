@@ -22,12 +22,12 @@ export const gridjsLanguageConfig = {
     error: 'エラーが発生しました。',
 };
 
-
 export const gridjsStyleConfig = {
     th: {
         backgroundColor: "royalblue",
         color: "white",
-        textAlign: "center"
+        textAlign: "center",
+        border: "1px solid #ccc"
     },
     td: {
         border: "1px solid #ccc"

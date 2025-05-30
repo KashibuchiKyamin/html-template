@@ -11,7 +11,7 @@ button.back {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 4px #999;
+    box-shadow: 4px 4px #999;
     transition: all 0.3s ease;
 }
 
@@ -26,7 +26,7 @@ button.send:hover {
 
 button.send:active {
     background-color: #00991F;
-    box-shadow: 0 2px #666;
+    box-shadow: 2px 2px #666;
     transform: translateY(2px);
 }
 
@@ -41,7 +41,7 @@ button.not-send:hover {
 
 button.not-send:active {
     background-color: #0099CC;
-    box-shadow: 0 2px #666;
+    box-shadow: 2px 2px #666;
     transform: translateY(2px);
 }
 
@@ -57,7 +57,7 @@ button.cancel:hover {
 
 button.cancel:active {
     background-color: #E6E6E6;
-    box-shadow: 0 2px #666;
+    box-shadow: 2px 2px #666;
     transform: translateY(2px);
 }
 
@@ -72,7 +72,7 @@ button.back:hover {
 
 button.back:active {
     background-color: #FFD700;
-    box-shadow: 0 2px #666;
+    box-shadow: 2px 2px #666;
     transform: translateY(2px);
 }
 
@@ -83,16 +83,20 @@ button.cancel:disabled,
 button.back:disabled {
     background-color: #999999;
     cursor: not-allowed;
-    box-shadow: 0 4px #666;
+    box-shadow: 4px 4px #666;
     /* 他のボタンと統一 */
     color: #666;
 }
 
 /* disabled ボタンのホバー・クリック時の変更を防止 */
-button:disabled:hover,
-button:disabled:active {
-    background-color: #999999;
-    box-shadow: 0 4px #666;
+button.send:disabled:hover,
+button.not-send:disabled:hover,
+button.cancel:disabled:hover,
+button.back:disabled:hover,
+button.send:disabled:active,
+button.not-send:disabled:active,
+button.cancel:disabled:active,
+button.back:disabled:active {
     transform: none;
 }
 
@@ -101,6 +105,14 @@ label.radio-block {
 }
 
 .gridjs-wrapper,
-.gridjs-footer{
+.gridjs-footer {
     border-radius: 0 0 0 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.errorMessage {
+    color: red;
 }
