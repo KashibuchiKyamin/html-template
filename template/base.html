@@ -8,10 +8,10 @@
     <script>
         var tableData = "/ajaxResponse/base-table.json";
     </script>
-    <script type="module" src="/static/js/japanese-gridjs.js"></script>
     <script type="module" src="/static/js/base.js"></script>
 
     <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <!-- ライブラリのCSSを上書きするのでこの順序にする。 -->
     <link rel="stylesheet" href="/static/css/common.css">
     <title>UI部品基本設計</title>
 </head>
@@ -78,7 +78,7 @@
     <button class="send" disabled>action</button>
     <hr>
 
-    <h2>テーブル</h2>
+    <h2>テーブル(Grid.jsによるサーバサイドでのページング)</h2>
     <div id="gridjs-table"></div>
 
 </body>

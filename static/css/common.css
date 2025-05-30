@@ -1,4 +1,11 @@
-button {
+body {
+    color: #333;
+}
+
+button.send,
+button.not-send,
+button.cancel,
+button.back {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -9,68 +16,71 @@ button {
 }
 
 /* 次画面へ、または送信 */
-.send {
+button.send {
     background-color: #00FF33;
 }
 
-.send:hover {
+button.send:hover {
     background-color: #00CC29;
 }
 
-.send:active {
+button.send:active {
     background-color: #00991F;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
 }
 
 /* 送信を伴わない入力 */
-.not-send {
+button.not-send {
     background-color: #66CCFF;
 }
 
-.not-send:hover {
+button.not-send:hover {
     background-color: #33BBFF;
 }
 
-.not-send:active {
+button.not-send:active {
     background-color: #0099CC;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
 }
 
 /* キャンセル */
-.cancel {
+button.cancel {
     background-color: #FFFFFF;
     border: 1px solid #CCC;
 }
 
-.cancel:hover {
+button.cancel:hover {
     background-color: #F2F2F2;
 }
 
-.cancel:active {
+button.cancel:active {
     background-color: #E6E6E6;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
 }
 
 /* 戻る用のボタン */
-.back {
+button.back {
     background-color: #FFFF99;
 }
 
-.back:hover {
+button.back:hover {
     background-color: #FFEE66;
 }
 
-.back:active {
+button.back:active {
     background-color: #FFD700;
     box-shadow: 0 2px #666;
     transform: translateY(2px);
 }
 
 /* disabled ボタン */
-button:disabled {
+button.send:disabled,
+button.not-send:disabled,
+button.cancel:disabled,
+button.back:disabled {
     background-color: #999999;
     cursor: not-allowed;
     box-shadow: 0 4px #666;
@@ -88,4 +98,9 @@ button:disabled:active {
 
 label.radio-block {
     display: block;
+}
+
+.gridjs-wrapper,
+.gridjs-footer{
+    border-radius: 0 0 0 0;
 }

@@ -1,5 +1,5 @@
-import { gridjsConfig } from "./japanese-gridjs.js";
-new gridjs.Grid({
+import { gridjsLanguageConfig, gridjsStyleConfig } from "./myGridjsConfig.js";
+const tableOfServerSide = new gridjs.Grid({
     columns: [
         "名前",
         "メールアドレス",
@@ -9,7 +9,7 @@ new gridjs.Grid({
         }
     ],
     sort: true,
-    language: gridjsConfig,
+    language: gridjsLanguageConfig,
     server: {
         url: tableData,
         method: "GET",
@@ -24,14 +24,26 @@ new gridjs.Grid({
         },
         total: (data) => data.total
     },
+    style: gridjsStyleConfig,
+    sort: {
+        multiColumn: false,
+        server: {
+            url: () => tableData,
+            body: (prev, columns) => {
+                console.log(`sort-prev:${prev}`);
+                console.log(`sort-columns:${columns}`);
+                return null;
+            }
+        }
+    },
     pagination: {
         limit: 5,
         server: {
-            url: (prev, page, limit) => prev,
+            url: () => tableData,
             body: (prev, page, limit) => {
-                console.log(`prev:${prev}`);
-                console.log(`page:${page}`);
-                console.log(`limit:${limit}`);
+                console.log(`pagination-prev:${prev}`);
+                console.log(`pagination-page:${page}`);
+                console.log(`pagination-limit:${limit}`);
                 return null;
             }
         }
