@@ -13,8 +13,8 @@ export const gridjsLanguageConfig = {
         page: (page) => `${page}ページ`,
         // 表の下部に表示する件数の順序はライブラリに依存のため変更できない。「全15件中　1～10件を表示」という書き方はできない。
         showing: ' ',
-        of: '件目を表示中（全',
         to: 'から',
+        of: '件目を表示中（全',
         results: '件）'
     },
     loading: '読み込み中...',

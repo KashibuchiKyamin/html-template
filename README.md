@@ -15,7 +15,7 @@ html-template
 │  │
 │  └─js
 │          base.js              ......base.html用のJavaScript
-│          japanese-gridjs.js   ......テーブル用ライブラリGrid.js向けの日本語表示用設定値
+│          myGridjsConfig.js   ......テーブル用ライブラリGrid.js向けの日本語表示用設定値
 │
 └─template
         base.html               ......「UI部品基本設計」としてのHTML

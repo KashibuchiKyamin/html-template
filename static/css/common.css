@@ -109,6 +109,11 @@ label.radio-block {
     border-radius: 0 0 0 0;
 }
 
+.gridjs-wrapper:nth-last-of-type(2) {
+    border-radius: 0 0 0 0;
+}
+
+
 ul {
     list-style: none;
 }

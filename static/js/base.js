@@ -21,7 +21,7 @@ const tableOfServerSide = new gridjs.Grid({
             if (res.status === 404) return { data: [] };
             if (res.ok) return res.json();
 
-            throw Error('oh no :(');
+            throw Error("oh no :(");
         },
         total: (data) => data.total
     },
@@ -49,3 +49,32 @@ const tableOfServerSide = new gridjs.Grid({
         }
     }
 }).render(document.getElementById("gridjs-table"));
+
+
+
+const tableOfStatic = new gridjs.Grid({
+
+    columns: [
+        {
+            id: "name",
+            name: "名前",
+        },
+        {
+            id: "email",
+            name: "メールアドレス",
+        },
+        {
+            id: "phoneNumber",
+            name: "電話番号"
+        }
+    ],
+    sort: false,
+    style: gridjsStyleConfig,
+    language: gridjsLanguageConfig,
+    data: [
+        { name: "John", email: "john@example.com", phoneNumber: "(353) 01 222 3333" },
+        { name: "Mark", email: "mark@gmail.com", phoneNumber: "(01) 22 888 4444" },
+        { name: "Eoin", email: "eo3n@yahoo.com", phoneNumber: "0097 22 654 00033" },
+        { name: "Nisen", email: "nis900@gmail.com", phoneNumber: "000-0000-0000" }
+    ]
+}).render(document.getElementById("gridjs-table-static"));
