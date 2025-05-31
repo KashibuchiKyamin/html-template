@@ -1,9 +1,11 @@
 body {
     color: #333;
+    width: 1366px;
+    margin: auto;
 }
 
 button.send,
-button.not-send,
+button.notSend,
 button.cancel,
 button.back {
     border: none;
@@ -31,15 +33,15 @@ button.send:active {
 }
 
 /* 送信を伴わない入力 */
-button.not-send {
+button.notSend {
     background-color: #66CCFF;
 }
 
-button.not-send:hover {
+button.notSend:hover {
     background-color: #33BBFF;
 }
 
-button.not-send:active {
+button.notSend:active {
     background-color: #0099CC;
     box-shadow: 2px 2px #666;
     transform: translateY(2px);
@@ -78,7 +80,7 @@ button.back:active {
 
 /* disabled ボタン */
 button.send:disabled,
-button.not-send:disabled,
+button.notSend:disabled,
 button.cancel:disabled,
 button.back:disabled {
     background-color: #999999;
@@ -90,17 +92,17 @@ button.back:disabled {
 
 /* disabled ボタンのホバー・クリック時の変更を防止 */
 button.send:disabled:hover,
-button.not-send:disabled:hover,
+button.notSend:disabled:hover,
 button.cancel:disabled:hover,
 button.back:disabled:hover,
 button.send:disabled:active,
-button.not-send:disabled:active,
+button.notSend:disabled:active,
 button.cancel:disabled:active,
 button.back:disabled:active {
     transform: none;
 }
 
-label.radio-block {
+label.radioBlock {
     display: block;
 }
 
