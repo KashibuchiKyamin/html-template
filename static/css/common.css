@@ -123,3 +123,38 @@ ul {
 .errorMessage {
     color: red;
 }
+
+table {
+    border-collapse: collapse;
+    display: table;
+    margin: 0;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0;
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+}
+
+tbody {
+    background-color: #fff;
+}
+
+th {
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+    border: 1px solid rgb(204, 204, 204);
+    min-width: 94px;
+    width: 264px;
+    outline: none;
+    padding: 14px 24px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+td {
+    border: 1px solid rgb(204, 204, 204);
+}
