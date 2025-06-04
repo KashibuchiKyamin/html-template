@@ -14,11 +14,13 @@ html-template
 │  ├─css
 │  │      common.css            ......共通部品のcss
 │  │      login.css             ......login.html用のcss
+│  │      orderDetail.css       ......orderDetail.html用のcss
 │  │
 │  └─js
 │          base.js              ......base.html用のJavaScript
 │          login.js             ......login.html用のJavaScript
 │          myGridjsConfig.js    ......テーブル用ライブラリGrid.js向けの日本語表示用設定値
+│          orderDetail.js       ......orderDetail.html用のJavaScript
 │          top.js               ......top.html用のJavaScript
 │
 └─template
