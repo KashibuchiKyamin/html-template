@@ -118,6 +118,7 @@ label.radioBlock {
 
 ul {
     list-style: none;
+    padding-inline-start: 0px;
 }
 
 .errorMessage {

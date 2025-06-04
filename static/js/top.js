@@ -19,7 +19,7 @@ const tableOfServerSide = new gridjs.Grid({
                 // buttonタグに「data-~」の形式で値を持っておき、
                 // イベントリスナーを使って動的にformを作る方針にする。
                 // 今回は値が一つで一意になるので簡単にしました。
-                const buttonHtml = `<button button="button" name="targetOrderId" value="${cell}" class="send" data-order-id="${cell}">詳細</button>`;
+                const buttonHtml = `<button button="button" form="detail-page-move-form" name="targetOrderId" value="${cell}" class="send" data-order-id="${cell}">詳細</button>`;
                 return gridjs.html(buttonHtml);
 
             }
@@ -68,3 +68,6 @@ const tableOfServerSide = new gridjs.Grid({
 }).render(document.getElementById("gridjs-table"));
 
 const table = document.getElementById("gridjs-table");
+table.addEventListener("click", event => {
+
+});
