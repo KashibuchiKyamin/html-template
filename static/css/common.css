@@ -159,3 +159,7 @@ th {
 td {
     border: 1px solid rgb(204, 204, 204);
 }
+
+footer {
+    height: 80px;
+}
